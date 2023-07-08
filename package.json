@@ -1,0 +1,37 @@
+{
+  "name": "sonatajs",
+  "version": "1.0.0",
+  "description": "Sonata JS",
+  "main": "src/cli.ts",
+  "bin": {
+    "sonata": "bin/sonata.js"
+  },
+  "scripts": {
+    "start": "tsc --watch",
+    "build": "tsc",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SonataJS/sonatajs.git"
+  },
+  "keywords": [
+    "SonataJS"
+  ],
+  "author": "Milos Zivlak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SonataJS/sonatajs/issues"
+  },
+  "homepage": "https://github.com/SonataJS/sonatajs#readme",
+  "devDependencies": {
+    "@types/node": "^20.4.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/figlet": "^1.5.6",
+    "@types/yargs": "^17.0.24",
+    "figlet": "^1.6.0",
+    "yargs": "^17.7.2"
+  }
+}
