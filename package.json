@@ -9,7 +9,7 @@
   "scripts": {
     "start": "tsc --watch",
     "build": "tsc",
-    "test": "test"
+    "test": "sh -c echo 'TODO: implement tests'\n"
   },
   "repository": {
     "type": "git",
