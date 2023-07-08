@@ -4,7 +4,7 @@ import { hideBin } from 'yargs/helpers';
 
 const parseArguments = (rawArgs: string[]) => {
   const args = yargs(hideBin(rawArgs))
-    .usage('Usage: projizi <command> [options]')
+    .usage('Usage: projizi <command> [options]').alias('h', 'help')
     .version().alias('v', 'version')
     .epilog(`Copyright (c) 2023 - ${new Date().getFullYear()} Milos Zivlak`)
     .parse();
