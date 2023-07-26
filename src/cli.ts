@@ -2,6 +2,13 @@ import figlet from 'figlet';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
+export type Args = {
+  [x: string]: unknown,
+  _: string[],
+  config: string,
+  output: string,
+}
+
 const parseArguments = (rawArgs: string[]) => {
   const args = yargs(hideBin(rawArgs))
     .usage('Usage: sonata <command> [options]').alias('h', 'help')
@@ -31,7 +38,7 @@ const parseArguments = (rawArgs: string[]) => {
           default: './',
         });
     })
-    .parse();
+    .parseSync();
 
   return args;
 }

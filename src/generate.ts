@@ -1,4 +1,5 @@
 import fs from 'fs-extra';
+import { Args } from './cli';
 
 export type Plugin = {
   name: string,
@@ -32,7 +33,7 @@ export const listGenerators = (): string[] => {
   return plugins.plugins.map(el => el.name);
 }
 
-export const generate = async (args) => {
+export const generate = async (args: Args) => {
   const configPath = args.config;
   const config = fs.readJsonSync(configPath);
 
